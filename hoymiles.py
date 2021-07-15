@@ -530,13 +530,13 @@ def ajustaDadosSolar():
         if DEVELOPERS_MODE:
             #printC ('parada 1/0', str(1/0))
             printC(Color.B_Red,'parada')
-    gDadosSolar['real_power'] = str( realPower )
-    gDadosSolar['power_ratio'] = str( power )
-    gDadosSolar['capacitor'] =  str( capacidade )
-    gDadosSolar['co2_emission_reduction'] = str( co2 )
-    gDadosSolar['plant_tree'] = str( plant_tree )
-    gDadosSolar['total_eq'] = str( total_eq )
-    gDadosSolar['month_eq'] = str( month_eq )
+    gDadosSolar['real_power'] = int( realPower )
+    gDadosSolar['power_ratio'] = float( power )
+    gDadosSolar['capacitor'] =  int( capacidade )
+    gDadosSolar['co2_emission_reduction'] = float( co2 )
+    gDadosSolar['plant_tree'] = int( plant_tree )
+    gDadosSolar['total_eq'] = float( total_eq )
+    gDadosSolar['month_eq'] = float( month_eq )
 
 
 def pegaDadosSolar():
